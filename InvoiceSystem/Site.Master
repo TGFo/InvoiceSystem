@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="InvoiceSystem.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Invoice System</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="Default.aspx">Invoice System</a>
+            <a class="navbar-brand" href="AddInvoice.aspx">Add Invoice</a>
+            <a class="navbar-brand" href="Customers.aspx">Customers</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                </ul>
+            </div>
+        </nav>
+        <div class="container mt-4">
+            <!-- Main content will be injected here -->
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+        <!-- Bootstrap JS and dependencies via CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>
